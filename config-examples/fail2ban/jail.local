@@ -1,0 +1,6 @@
+[owncloud]
+
+enabled  = true
+port     = http,https
+filter   = owncloud
+logpath  = /var/www/nextcloud/nextcloud.log
