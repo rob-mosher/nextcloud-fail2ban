@@ -23,9 +23,11 @@ Add the following to Nextcloud's config files. Remember to restart `fail2ban`
 after adding the below. With Debian/Ubuntu this is done with
 `/etc/init.d/fail2ban reload`
 
-### filter.d/owncloud.conf
+### filter.d/nextcloud.conf
 
-Note: Nextcloud support is pending for the release of the 'nextcloud' log type
+Add the following file to your `fail2ban` filters directory. Note: At the
+moment,Nextcloud still uses the ownCloud log type. The author will update the
+examples upon release of the 'nextcloud' log type is announced.
 
 ```
 [INCLUDES]
@@ -38,7 +40,7 @@ ignoreregex =
 
 ### jail.local
 
-Add the following to your jail.local file. Note: do not edit your jail.conf
+Add the following text to your jail.local file. Note: do not edit your jail.conf
 file as changes may be discarded on updates instead, copy jail.conf to
 jail.local and make edits there.
 
@@ -47,6 +49,6 @@ jail.local and make edits there.
 
 enabled  = true
 port     = http,https
-filter   = owncloud
+filter   = nextcloud
 logpath  = /var/www/nextcloud/nextcloud.log
 ```

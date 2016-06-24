@@ -2,5 +2,5 @@
 
 enabled  = true
 port     = http,https
-filter   = owncloud
+filter   = nextcloud
 logpath  = /var/www/nextcloud/nextcloud.log
