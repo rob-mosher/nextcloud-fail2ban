@@ -1,8 +1,19 @@
+# NOTE: The guide is "archived"
+
+Nextcloud now natively supports bruteforce protection, please see:
+
+https://docs.nextcloud.com/server/12/admin_manual/configuration_server/config_sample_php_parameters.html?highlight=bruteforce
+
+This guide is archived here for those using older versions of Nextcloud, or are in conditions where there are forced to use Fail2Ban.
+
+
 # nextcloud-fail2ban
 
 WIP
 
 Examples are also located in this repositories `config-examples` directory.
+
+
 
 ## Nextcloud
 
